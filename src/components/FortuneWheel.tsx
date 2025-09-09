@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Gift, Sparkles } from "lucide-react";
 
 const prizes = [
@@ -165,6 +165,9 @@ const FortuneWheel = () => {
               <DialogTitle className="text-2xl text-center">
                 🎉 Поздравляем!
               </DialogTitle>
+              <DialogDescription className="text-center">
+                Вы выиграли приз в колесе фортуны
+              </DialogDescription>
             </DialogHeader>
             {selectedPrize && (
               <div className="space-y-4">

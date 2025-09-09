@@ -1,8 +1,12 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import SocialProofSection from "@/components/SocialProofSection";
+import ServicesMap from "@/components/ServicesMap";
+import ProcessSteps from "@/components/ProcessSteps";
 import Calculator from "@/components/Calculator";
 import LiveDeals from "@/components/LiveDeals";
+import ExpertsTeam from "@/components/ExpertsTeam";
+import AutoDeskClub from "@/components/AutoDeskClub";
 import FortuneWheel from "@/components/FortuneWheel";
 import NotificationPopup from "@/components/NotificationPopup";
 
@@ -17,16 +21,28 @@ const Index = () => {
         {/* Hero Section */}
         <HeroSection />
         
-        {/* Social Proof */}
+        {/* Social Proof - Нам доверяют */}
         <SocialProofSection />
         
-        {/* Calculator */}
+        {/* Services Map - Услуги и карта */}
+        <ServicesMap />
+        
+        {/* Process Steps - Как мы работаем */}
+        <ProcessSteps />
+        
+        {/* Calculator - Калькулятор */}
         <Calculator />
         
-        {/* Live Deals */}
+        {/* Live Deals - Сделки в реальном времени */}
         <LiveDeals />
         
-        {/* Fortune Wheel */}
+        {/* Experts Team - Команда экспертов */}
+        <ExpertsTeam />
+        
+        {/* Auto-Desk Club - Закрытый клуб */}
+        <AutoDeskClub />
+        
+        {/* Fortune Wheel - Колесо фортуны */}
         <FortuneWheel />
       </main>
       
