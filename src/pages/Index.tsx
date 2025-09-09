@@ -2,9 +2,12 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import SocialProofSection from "@/components/SocialProofSection";
 import ServicesMap from "@/components/ServicesMap";
+import AITechnology from "@/components/AITechnology";
 import ProcessSteps from "@/components/ProcessSteps";
 import Calculator from "@/components/Calculator";
 import LiveDeals from "@/components/LiveDeals";
+import SuccessStories from "@/components/SuccessStories";
+import TargetAudiences from "@/components/TargetAudiences";
 import ExpertsTeam from "@/components/ExpertsTeam";
 import AutoDeskClub from "@/components/AutoDeskClub";
 import FortuneWheel from "@/components/FortuneWheel";
@@ -27,6 +30,9 @@ const Index = () => {
         {/* Services Map - Услуги и карта */}
         <ServicesMap />
         
+        {/* AI Technology - ИИ-технологии */}
+        <AITechnology />
+        
         {/* Process Steps - Как мы работаем */}
         <ProcessSteps />
         
@@ -35,6 +41,12 @@ const Index = () => {
         
         {/* Live Deals - Сделки в реальном времени */}
         <LiveDeals />
+        
+        {/* Success Stories - Истории успеха */}
+        <SuccessStories />
+        
+        {/* Target Audiences - Для кого мы работаем */}
+        <TargetAudiences />
         
         {/* Experts Team - Команда экспертов */}
         <ExpertsTeam />
