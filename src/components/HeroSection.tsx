@@ -71,6 +71,8 @@ const HeroSection = () => {
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-slide-up animation-delay-100">
             Подбор, проверка, покупка и доставка с постановкой на учет
+            <br />
+            <span className="text-lg">Фиксированная цена в договоре, гарантия 6 мес на двигатель и КПП и пожизненное членство в закрытом клубе</span>
           </p>
 
           {/* Live Counter */}

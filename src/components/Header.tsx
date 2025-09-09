@@ -61,7 +61,11 @@ const Header = () => {
             >
               <Phone className="w-4 h-4" />
               <span className="font-semibold">8 800 555-0123</span>
+              <span className="text-xs text-muted-foreground">24/7</span>
             </a>
+            <Button variant="ghost" size="sm">
+              Личный кабинет
+            </Button>
             <Button variant="hero" size="default" className="flex items-center space-x-2">
               <Calculator className="w-4 h-4" />
               <span>Рассчитать стоимость</span>
