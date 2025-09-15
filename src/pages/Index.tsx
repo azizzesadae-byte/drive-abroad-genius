@@ -1,12 +1,9 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import SocialProofSection from "@/components/SocialProofSection";
-import ServicesMap from "@/components/ServicesMap";
 import AITechnology from "@/components/AITechnology";
 import ProcessSteps from "@/components/ProcessSteps";
-import Calculator from "@/components/Calculator";
 import LiveDeals from "@/components/LiveDeals";
-import SuccessStories from "@/components/SuccessStories";
 import TargetAudiences from "@/components/TargetAudiences";
 import ExpertsTeam from "@/components/ExpertsTeam";
 import AutoDeskClub from "@/components/AutoDeskClub";
@@ -14,15 +11,24 @@ import PartnerProgram from "@/components/PartnerProgram";
 import B2BSolutions from "@/components/B2BSolutions";
 import CompanyHistory from "@/components/CompanyHistory";
 import Contacts from "@/components/Contacts";
-import FortuneWheel from "@/components/FortuneWheel";
 import NotificationPopup from "@/components/NotificationPopup";
 import Footer from "@/components/Footer";
 import ProgressTracker from "@/components/ProgressTracker";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import RetargetingNotifications from "@/components/RetargetingNotifications";
 import FloatingCTA from "@/components/FloatingCTA";
+import usePerformanceOptimizer from "@/hooks/usePerformanceOptimizer";
+import { 
+  LazyComponent,
+  LazyFortuneWheel,
+  LazyCalculator,
+  LazySuccessStories,
+  LazyServicesMap
+} from "@/components/LazyComponents";
 
 const Index = () => {
+  usePerformanceOptimizer();
+  
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -36,8 +42,8 @@ const Index = () => {
         {/* Social Proof - Нам доверяют */}
         <SocialProofSection />
         
-        {/* Services Map - Услуги и карта */}
-        <ServicesMap />
+        {/* Services Map - Услуги и карта (Lazy Loaded) */}
+        <LazyComponent Component={LazyServicesMap} height="600px" />
         
         {/* AI Technology - ИИ-технологии */}
         <AITechnology />
@@ -45,14 +51,14 @@ const Index = () => {
         {/* Process Steps - Как мы работаем */}
         <ProcessSteps />
         
-        {/* Calculator - Калькулятор */}
-        <Calculator />
+        {/* Calculator - Калькулятор (Lazy Loaded) */}
+        <LazyComponent Component={LazyCalculator} height="500px" />
         
         {/* Live Deals - Сделки в реальном времени */}
         <LiveDeals />
         
-        {/* Success Stories - Истории успеха */}
-        <SuccessStories />
+        {/* Success Stories - Истории успеха (Lazy Loaded) */}
+        <LazyComponent Component={LazySuccessStories} height="600px" />
         
         {/* Target Audiences - Для кого мы работаем */}
         <TargetAudiences />
@@ -75,8 +81,8 @@ const Index = () => {
         {/* Contacts - Контакты */}
         <Contacts />
         
-        {/* Fortune Wheel - Колесо фортуны */}
-        <FortuneWheel />
+        {/* Fortune Wheel - Колесо фортуны (Lazy Loaded) */}
+        <LazyComponent Component={LazyFortuneWheel} height="500px" />
       </main>
       
       {/* Footer */}
