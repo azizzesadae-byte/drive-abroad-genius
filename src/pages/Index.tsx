@@ -10,8 +10,13 @@ import SuccessStories from "@/components/SuccessStories";
 import TargetAudiences from "@/components/TargetAudiences";
 import ExpertsTeam from "@/components/ExpertsTeam";
 import AutoDeskClub from "@/components/AutoDeskClub";
+import PartnerProgram from "@/components/PartnerProgram";
+import B2BSolutions from "@/components/B2BSolutions";
+import CompanyHistory from "@/components/CompanyHistory";
+import Contacts from "@/components/Contacts";
 import FortuneWheel from "@/components/FortuneWheel";
 import NotificationPopup from "@/components/NotificationPopup";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -54,9 +59,24 @@ const Index = () => {
         {/* Auto-Desk Club - Закрытый клуб */}
         <AutoDeskClub />
         
+        {/* Partner Program - Партнерская программа */}
+        <PartnerProgram />
+        
+        {/* B2B Solutions - B2B решения */}
+        <B2BSolutions />
+        
+        {/* Company History - История компании */}
+        <CompanyHistory />
+        
+        {/* Contacts - Контакты */}
+        <Contacts />
+        
         {/* Fortune Wheel - Колесо фортуны */}
         <FortuneWheel />
       </main>
+      
+      {/* Footer */}
+      <Footer />
       
       {/* Notification System */}
       <NotificationPopup />
