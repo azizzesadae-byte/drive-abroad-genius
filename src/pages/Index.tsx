@@ -17,6 +17,10 @@ import Contacts from "@/components/Contacts";
 import FortuneWheel from "@/components/FortuneWheel";
 import NotificationPopup from "@/components/NotificationPopup";
 import Footer from "@/components/Footer";
+import ProgressTracker from "@/components/ProgressTracker";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
+import RetargetingNotifications from "@/components/RetargetingNotifications";
+import FloatingCTA from "@/components/FloatingCTA";
 
 const Index = () => {
   return (
@@ -80,6 +84,12 @@ const Index = () => {
       
       {/* Notification System */}
       <NotificationPopup />
+      
+      {/* Global Interactive Elements */}
+      <ProgressTracker />
+      <ExitIntentPopup />
+      <RetargetingNotifications />
+      <FloatingCTA />
     </div>
   );
 };
